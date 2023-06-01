@@ -1,6 +1,7 @@
 import com.example.airlinegraph.graph.IGraph;
 import com.example.airlinegraph.graph.ListAdjacencyGraph;
 import com.example.airlinegraph.graph.Edge;
+import com.example.airlinegraph.graph.MatrixAdjacencyGraph;
 import javafx.util.Pair;
 import org.junit.jupiter.api.Test;
 
@@ -179,6 +180,10 @@ public class TestGraph {
         setUpStage2();
         assertTrue(graph.BFS(source));
 
+        graph = new MatrixAdjacencyGraph<>(false);
+        setUpStage2();
+        assertTrue(graph.BFS(source));
+
     }
 
     @Test
@@ -187,6 +192,10 @@ public class TestGraph {
         String source = "denver";
 
         graph = new ListAdjacencyGraph<>(false);
+        setUpStage4();
+        assertTrue(graph.BFS(source));
+
+        graph = new MatrixAdjacencyGraph<>(false);
         setUpStage4();
         assertTrue(graph.BFS(source));
 
@@ -200,6 +209,10 @@ public class TestGraph {
         graph = new ListAdjacencyGraph<>(false);
         setUpStage7();
         assertFalse(graph.BFS(source));
+
+        graph = new MatrixAdjacencyGraph<>(false);
+        setUpStage7();
+        assertFalse(graph.BFS(source));
     }
 
     @Test
@@ -208,6 +221,11 @@ public class TestGraph {
         int expected = 1;
 
         graph = new ListAdjacencyGraph<>(false);
+        setUpStage2();
+
+        assertEquals(graph.DFS(), expected);
+
+        graph = new MatrixAdjacencyGraph<>(false);
         setUpStage2();
 
         assertEquals(graph.DFS(), expected);
@@ -223,6 +241,11 @@ public class TestGraph {
 
         assertEquals(graph.DFS(), expected);
 
+        graph = new MatrixAdjacencyGraph<>(false);
+        setUpStage4();
+
+        assertEquals(graph.DFS(), expected);
+
     }
 
     @Test
@@ -231,6 +254,11 @@ public class TestGraph {
         int expected = 3;
 
         graph = new ListAdjacencyGraph<>(false);
+        setUpStage7();
+
+        assertEquals(graph.DFS(), expected);
+
+        graph = new MatrixAdjacencyGraph<>(false);
         setUpStage7();
 
         assertEquals(graph.DFS(), expected);
@@ -251,7 +279,12 @@ public class TestGraph {
 
         assertTrue(verifyPath(edge, edgeExpected, distanceExpected));
 
+        graph = new MatrixAdjacencyGraph<>(true);
+        setUpStage1();
 
+        edge = graph.dijkstra("a", "d");
+
+        assertTrue(verifyPath(edge, edgeExpected, distanceExpected));
     }
 
     @Test
@@ -267,6 +300,14 @@ public class TestGraph {
         edge = graph.dijkstra("a", "z");
 
         assertTrue(verifyPath(edge, edgeExpected, distanceExpected));
+
+        graph = new MatrixAdjacencyGraph<>(false);
+        setUpStage2();
+
+        edge = graph.dijkstra("a", "z");
+
+        assertTrue(verifyPath(edge, edgeExpected, distanceExpected));
+
     }
 
     @Test
@@ -277,6 +318,13 @@ public class TestGraph {
         Edge<String> edge;
 
         graph = new ListAdjacencyGraph<>(true);
+        setUpStage3();
+
+        edge = graph.dijkstra("S", "T");
+
+        verifyPath(edge, edgeExpected, distanceExpected);
+
+        graph = new MatrixAdjacencyGraph<>(true);
         setUpStage3();
 
         edge = graph.dijkstra("S", "T");
@@ -301,6 +349,13 @@ public class TestGraph {
 
         verifyPath(edge, edgeExpected, distanceExpected);
 
+        graph = new MatrixAdjacencyGraph<>(true);
+        setUpStage1();
+
+        edge =  graph.floydWarshall().get(route);
+
+        verifyPath(edge, edgeExpected, distanceExpected);
+
     }
 
     @Test
@@ -316,6 +371,15 @@ public class TestGraph {
         setUpStage2();
 
         edge = graph.floydWarshall().get(route);
+
+        assertTrue(verifyPath(edge, edgeExpected, distanceExpected));
+
+        graph = new MatrixAdjacencyGraph<>(false);
+        setUpStage2();
+
+        edge = graph.floydWarshall().get(route);
+
+        verifyPath(edge, edgeExpected, distanceExpected);
 
         assertTrue(verifyPath(edge, edgeExpected, distanceExpected));
 
@@ -336,6 +400,13 @@ public class TestGraph {
         edge = graph.floydWarshall().get(route);
 
         assertTrue(verifyPath(edge, pathExpected, distanceExpected));
+
+        graph = new MatrixAdjacencyGraph<>(true);
+        setUpStage3();
+
+        edge = graph.floydWarshall().get(route);
+
+        assertTrue(verifyPath(edge, pathExpected, distanceExpected));
     }
 
     @Test
@@ -349,6 +420,11 @@ public class TestGraph {
 
         assertEquals(graph.prim("atlanta"), expected);
 
+        graph = new MatrixAdjacencyGraph<>(false);
+        setUpStage4();
+
+        assertEquals(graph.prim(source), expected);
+
     }
 
     @Test
@@ -358,6 +434,11 @@ public class TestGraph {
         double expected = 6.0;
 
         graph = new ListAdjacencyGraph<>(false);
+        setUpStage5();
+
+        assertEquals(graph.prim(source), expected);
+
+        graph = new MatrixAdjacencyGraph<>(false);
         setUpStage5();
 
         assertEquals(graph.prim(source), expected);
@@ -373,6 +454,12 @@ public class TestGraph {
         setUpStage6();
 
         assertEquals(graph.prim(source), expected);
+
+        graph = new MatrixAdjacencyGraph<>(false);
+        setUpStage6();
+
+        assertEquals(graph.prim(source), expected);
+
     }
 
     @Test
@@ -381,6 +468,11 @@ public class TestGraph {
         double expected = 3600.0;
 
         graph = new ListAdjacencyGraph<>(false);
+        setUpStage4();
+
+        assertEquals(graph.kruskal(), expected);
+
+        graph = new MatrixAdjacencyGraph<>(false);
         setUpStage4();
 
         assertEquals(graph.kruskal(), expected);
@@ -394,6 +486,11 @@ public class TestGraph {
         setUpStage5();
 
         assertEquals(graph.kruskal(), expected);
+
+        graph = new MatrixAdjacencyGraph<>(false);
+        setUpStage5();
+
+        assertEquals(graph.kruskal(), expected);
     }
 
     @Test
@@ -402,6 +499,11 @@ public class TestGraph {
         double expected = 24.0;
 
         graph = new ListAdjacencyGraph<>(false);
+        setUpStage6();
+
+        assertEquals(graph.kruskal(), expected);
+
+        graph = new MatrixAdjacencyGraph<>(false);
         setUpStage6();
 
         assertEquals(graph.kruskal(), expected);
