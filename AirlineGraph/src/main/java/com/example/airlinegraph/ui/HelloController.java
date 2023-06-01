@@ -1,4 +1,4 @@
-package com.example.airlinegraph;
+package com.example.airlinegraph.ui;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
