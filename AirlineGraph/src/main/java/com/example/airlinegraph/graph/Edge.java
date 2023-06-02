@@ -9,7 +9,7 @@ public class Edge<E> {
 
     public Edge(List<E> edge, double distance){
         this.edge = edge;
-        this.distance = distance;
+        this.distance = Math.round(distance * 100.0) / 100.0;
     }
 
     public double getDistance() {

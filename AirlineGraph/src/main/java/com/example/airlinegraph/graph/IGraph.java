@@ -6,25 +6,25 @@ import java.util.Map;
 
 public interface IGraph<E> {
 
-    public void addVertex(E element);
-    public void addEdge(E source, E destination, double weight);
+    void addVertex(E element);
+    void addEdge(E source, E destination, double weight);
 
-    public Vertex<E> searchVertex(E element);
+    Vertex<E> searchVertex(E element);
 
-    public Double searchEdge(E source, E destination);
+    Double searchEdge(E source, E destination);
 
-    public void deleteVertex(E element);
+    void deleteVertex(E element);
 
-    public void deleteEdge(E source, E destination);
+    void deleteEdge(E source, E destination);
 
-    public boolean BFS(E sourceElement);
-    public int DFS();
-    public Edge<E> dijkstra(E source, E destination);
+    boolean BFS(E sourceElement);
+    int DFS();
+    Edge<E> dijkstra(E source, E destination);
 
-    public Map<Pair<E, E>, Edge<E>> floydWarshall();
+    Map<Pair<E, E>, Edge<E>> floydWarshall();
 
-    public double prim(E source);
+    double prim(E source);
 
-    public double kruskal();
+    double kruskal();
 
 }

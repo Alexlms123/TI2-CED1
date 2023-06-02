@@ -1,0 +1,244 @@
+Hawaii,California,396.20
+California,Hawaii,396.20
+Hawaii,Arizona,460.37
+Arizona,Hawaii,460.37
+Alaska,Washington,269.72
+Washington,Alaska,269.726
+Alaska,Idaho,312.28
+Idaho,Alaska,312.28
+Washington,Oregon,25.3
+Oregon,Washington,25.3
+Washington,Idaho,57.2
+Idaho,Washington,57.2
+Oregon,Idaho,46.69
+Idaho,Oregon,46.69
+Oregon,California,81.81
+California,Oregon,81.81
+Oregon,Nevada,58.92
+Nevada,Oregon,58.92
+Idaho,Nevada,72.132
+Nevada,Idaho,72.132
+Idaho,Montana,45.297
+Montana,Idaho,45.297
+Idaho,Utah,80.276
+Utah,Idaho,80.276
+Idaho,Wyoming,91.777
+Wyoming,Idaho,91.777
+California,Arizona,76.435
+Arizona,California,76.435
+California,Nevada,41.611
+Nevada,California,41.611
+Nevada,Arizona,72.652
+Arizona,Nevada,72.652
+Nevada,Utah,40.802
+Utah,Nevada,40.802
+Utah,Arizona,53.908
+Arizona,Utah,53.908
+Utah,Wyoming,59.163
+Wyoming,Utah,59.163
+Utah,Colorado,54.673
+Colorado,Utah,54.673
+Utah,New Mexico,72.471
+New Mexico,72.471
+Arizona,New Mexico,50.706
+New Mexico,Arizona,50.706
+Arizona,Colorado,75.608
+Colorado,Arizona,75.608
+Montana,Wyoming,69.204
+Wyoming,Montana,69.204
+Montana,North Dakota,69.436
+North Dakota,Montana,69.436
+Montana,South Dakota,78.241
+South Dakota,Montana,78.241
+Wyoming,Colorado,27.596
+Colorado,Wyoming,27.596
+Wyoming,Nebraska,48.524
+Nebraska,Wyoming,48.524
+Wyoming,South Dakota,55.140
+South Dakota,Wyoming,55.140
+Colorado,Nebraska,56.071
+Nebraska,Colorado,56.071
+Colorado,Kansas,62.385
+Kansas,Colorado,62.385
+Colorado,Oklahoma,81.302
+Oklahoma,Colorado,81.302
+Colorado,New Mexico,50.264
+New Mexico,Colorado,50.264
+New Mexico,Texas,82.313
+Texas,New Mexico,82.313
+New Mexico,Oklahoma,79.051
+Oklahoma,New Mexico,79.051
+Texas,Oklahoma,49.784
+Oklahoma,Texas,49.784
+Texas,Louisiana,55.777
+Louisiana,Texas,55.777
+Texas,Arkansas,74.735
+Arkansas,Texas,74.735
+North Dakota,South Dakota,33.418
+South Dakota,North Dakota,33.418
+North Dakota,Minnesota,45.562
+Minnesota,North Dakota,45.562
+South Dakota,Minnesota,50.137
+Minnesota,South Dakota,50.137
+South Dakota,Iowa,60.809
+Iowa,South Dakota,60.809
+South Dakota,Nebraska,33.212
+Nebraska,South Dakota,33.212
+Nebraska,Kansas,35.503
+Kansas,Nebraska,35.503
+Nebraska,Iowa,52.662
+Iowa,Nebraska,52.662
+Nebraska,Missouri,69.619
+Missouri,Nebraska,69.619
+Kansas,Missouri,49.092
+Misuri,Kansas,49.0p2
+Kansas,Oklahoma,34.731
+Oklahoma,Kansas,34.731
+Oklahoma,Arkansas,57.625
+Arkansas,Oklahoma,57.625
+Oklahoma,Missouri,53.186
+Missouri,Oklahoma,53.186
+Minnesota,Iowa,51.824
+Iowa,Minnesota,51.824
+Minnesota,Wisconsin,47.223
+Wisconsin,Minnesota,47.223
+Iowa,Wisconsin,41.614
+Wisconsin,Iowa,41.614
+Iowa,Illinois,41.112
+Illinois,Iowa,41.112
+Iowa,Missouri,41.491
+Missouri,Iowa,41.491
+Missouri,Arkansas,46.758
+Arkansas,Missouri,46.758
+Missouri,Kentucky,68.890
+Kentucky,Missouri,68.890
+Missouri,Tennessee,63.377
+Tennessee,Missouri,63.377
+Missouri,Illinois,37.246
+Illinois,Missouri,37.246
+Arkansas,Louisiana,43.208
+Louisiana,Arkansas,43.208
+Arkansas,Mississippi,21.726
+Mississippi,Arkansas,21.726
+Arkansas,Tennessee,48.571
+Tennessee,Arkansas,48.571
+Louisiana,Mississippi,37.612
+Mississippi,Louisiana,37.612
+Wisconsin,Michigan,38.858
+Michigan,Wisconsin,38.858
+Wisconsin,Illinois,45.546
+Illinois,Wisconsin,45.546
+Illinois,Kentucky,46.640
+Kentucky,Illinois,46.640
+Illinois,Indiana,25.341
+Indiana,Illinois,25.341
+Mississippi,Tennessee,44.493
+Tennessee,Mississippi,44.493
+Mississippi,Alabama,27.009
+Alabama,Mississippi,27.009
+Michigan,Indiana,46.661
+Indiana,Michigan,46.661
+Michigan,Ohio,43.206
+Ohio,Michigan,43.206
+Indiana,Kentucky,27.104
+Kentucky,Indiana,27.104
+Indiana,Ohio,28.917
+Ohio,Indiana,28.917
+Kentucky, Ohio,33.537
+Ohio,Kentucky,33.537
+Kentucky,Tennessee,24.399
+Tennessee,Kentucky,24.399
+Kentucky,Virginia,57.583
+Virginia,Kentucky,57.583
+Kentucky,West Virginia,39.040
+West Virginia,Kentucky,39.040
+Tennessee,Alabama,35.092
+Alabama,Tennessee,35.092
+Tennessee,Georgia,28.811
+Georgia,Tennessee,28.811
+Tennessee,North Carolina,71.463
+North Carolina,Tennessee,71.463
+Tennessee,Virginia,74.044
+Virginia,Tennessee,74.044
+Alabama,Georgia,25.324
+Georgia,Alabama,25.324
+Alabama,Florida,71.281
+Florida,Alabama,71.281
+Ohio,Pennsylvania,43.126
+Pennsylvania,Ohio,43.126
+Ohio,West Virginia,25.718
+West Virginia,Ohio,25.718
+Georgia,Florida,69.168
+Florida,Georgia,69.168
+Georgia,North Carolina,57.437
+North Carolina,Georgia,57.437
+Georgia,South Carolina,35.025
+South Carolina,Georgia,35.025
+South Carolina,North Carolina,27.325
+North Carolina,South Carolina,27.325
+North Carolina,Virginia,26.068
+Virginia,North Carolina,26.068
+Virginia,West Virginia,22.697
+West Virginia,Virginia,22.697
+Virginia,Maryland,22.902
+Maryland,Virginia,22.902
+West Virginia,Maryland,37.409
+Maryland,West Virginia,37.409
+West Virginia,Pensilvania,33.804
+Pensilvania,West Virginia,33.804
+Maryland,Delaware,7.689
+Delaware,Maryland,7.689
+Maryland,Pennsylvania,23.914
+Pennsylvania,Maryland,23.914
+Delaware,Pennsylvania,29.136
+Pennsylvania,Delaware,29.136
+Delaware,New Jersey,9.838
+New Jersey,Delaware,9.838
+Pennsylvania,New York,32.628
+New York,Pennsylvania,32.628
+Pennsylvania,New Jersey,29.471
+New Jersey,Pennsylvania,29.471
+New York, New Jersey,13.062
+New Jersey, Nueva York,13.062
+New York,Connecticut,14.245
+Connecticut,New York,14.245
+New York,Vermont,40.640
+Vermont,New York,40.640
+New York,Massachusetts,27.559
+Massachusetts,New York,27.559
+Connecticut,Rhode Island,16.53
+Rhode Island,Connecticut,16.53
+Connecticut, Massachusetts,14.975
+Massachusetts,Connecticut,14.975
+Rhode Island, Massachusetts,10.581
+Massachusetts, Rhode Island,10.581
+Massachusetts,Vermont,22.609
+Vermont,Massachusetts,22.609
+Massachusetts,New Hampshire,14.303
+New Hampshire,Massachusetts,14.303
+Massachusetts,Maine,37.247
+Maine,Massachusetts,37.247
+Vermont,New Hampshire,10.803
+New Hampshire,Vermont,10.803
+New Hampshire,Maine,26.146
+Maine,New Hampshire,26.146
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
