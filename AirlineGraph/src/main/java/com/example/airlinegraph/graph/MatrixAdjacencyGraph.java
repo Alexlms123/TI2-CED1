@@ -66,33 +66,6 @@ public class MatrixAdjacencyGraph<E> implements IGraph<E>{
 
         return null;
     }
-
-    @Override
-    public void deleteVertex(E element) {
-        Integer elementIndex = mapIndex.get(vertices.get(element));
-
-        if(elementIndex == null) return;
-
-        adjMatrix.remove((int) elementIndex);
-        vertices.remove(element);
-        adjMatrix.forEach(row -> row.remove((int) elementIndex));
-
-    }
-
-    @Override
-    public void deleteEdge(E source, E destination) {
-
-        Integer sourceIndex = mapIndex.get(vertices.get(source));
-        Integer destinationIndex = mapIndex.get(vertices.get(destination));
-
-        if(sourceIndex == null || destinationIndex == null) return;
-
-        adjMatrix.get(sourceIndex).set(destinationIndex, Double.MAX_VALUE);
-
-        if(!isDirected)
-            adjMatrix.get(destinationIndex).set(sourceIndex, Double.MAX_VALUE);
-    }
-
     @Override
     public boolean BFS(E sourceElement) {
 

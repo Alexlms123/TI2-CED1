@@ -57,14 +57,6 @@ public class ListAdjacencyGraph<E> implements IGraph<E> {
     }
 
     @Override
-    public void deleteVertex(E element){
-        if(vertices.containsKey(element)){
-            edges.put(vertices.get(element), null);
-            vertices.put(element, null);
-        }
-    }
-
-    @Override
     public Vertex<E> searchVertex(E element){
         return vertices.get(element);
     }
@@ -77,19 +69,6 @@ public class ListAdjacencyGraph<E> implements IGraph<E> {
             return aux.get(vertices.get(destination));
 
         return null;
-    }
-
-    @Override
-    public void deleteEdge(E source, E destination){
-        Vertex<E> vSource = vertices.get(source);
-        Vertex<E> vDestination = vertices.get(destination);
-
-        if(vSource != null && vDestination != null){
-            edges.get(vSource).remove(vDestination);
-
-            if(!isDirected)
-                edges.get(vDestination).remove(vSource);
-        }
     }
 
     @Override

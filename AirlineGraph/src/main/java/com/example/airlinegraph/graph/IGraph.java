@@ -13,10 +13,6 @@ public interface IGraph<E> {
 
     Double searchEdge(E source, E destination);
 
-    void deleteVertex(E element);
-
-    void deleteEdge(E source, E destination);
-
     boolean BFS(E sourceElement);
     int DFS();
     Edge<E> dijkstra(E source, E destination);
